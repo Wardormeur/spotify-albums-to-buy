@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>I should probably buy a couple of CDs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="index.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-700 text-white hidden">
+  <h1 class="text-center text-xl font-bold my-4">Support those artists, buy a CD !</h1>
+  <div class="w-full mb-4" id="progressbar">
+    <div class="relative pt-1">
+      <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+          <div id="progress"
+              class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <a id="login" class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Login using Spotify</a>
+    <div id="albumsbody" class="flex flex-col space-y-4">
+      <div id="years" class="hidden flex flex-row justify-between">
+        <button class="font-bold">All</button>
+      </div>
+      <ul id="albums"></ul>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center mt-6">
+    <h2 class="text-center text-xl mb-2">Why ?</h2>
+    <p class="max-w-md place-self-center">Under the assumption that transitioning from the album concept to the track format was painful and in order to help you support your favorites band, we've extracted your most liked albums from Spotify (up to 50k songs) No data is being saved.</p>
+  </div>
+</body>
+</html>
